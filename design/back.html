@@ -1,0 +1,21 @@
+<!-- Card back. Design units: 8px = 1mm. Size and bleed come from card.config.json via --card-w, --card-h, --bleed. -->
+<div class="card" style="padding: calc(var(--bleed) + 44px) calc(var(--bleed) + 48px); background: radial-gradient(ellipse 70% 90% at 100% 100%, #0A1530 0%, #03050D 65%); display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
+  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 24px">
+    <img src="{{ASSETS}}/SIENA-symbol-transparent.png" alt="SIENA symbol" style="height: 72px; width: auto; display: block">
+    <div class="mono" style="padding-top: 6px; font-size: 16px; letter-spacing: 0.24em; text-transform: uppercase; color: #E8F6FF">{{LOCATION}}</div>
+  </div>
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 28px">
+    <div style="display: grid; grid-template-columns: 70px minmax(0, 1fr); column-gap: 16px; row-gap: 9px; align-items: baseline; min-width: 0">
+      <div class="mono label">TEL</div>
+      <div class="value">{{PHONE}}</div>
+      <div class="mono label">MAIL</div>
+      <div class="value">{{EMAIL}}</div>
+      <div class="mono label">WEB</div>
+      <div class="value">{{WEBSITE}}</div>
+    </div>
+    <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 8px">
+      <div class="qr">{{QR_SVG}}</div>
+      <div class="mono" style="font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase; color: #7F93B3">WhatsApp</div>
+    </div>
+  </div>
+</div>
